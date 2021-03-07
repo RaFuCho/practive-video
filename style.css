@@ -1,0 +1,314 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*cabecera*/
+.header{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    padding: 5px;
+    display: inherit;
+    align-items: center;
+}
+.left img{
+    margin: 5px;
+}
+
+.center, .left-center{
+    display: inherit;
+    align-items: center;
+}
+
+.left-center button{
+    width:65px;
+    height: 30px;
+    border: 0.5px solid rgb(228, 215, 215);
+
+}
+
+/*.search{
+    border: 0.5px solid gray;
+    border-radius: 1px;
+    height: 26px;
+    padding: 1px 6px;
+
+}*/
+
+.center input{    
+    border-radius:1px;
+    width: 562px;
+    height: 26px;
+    padding: 1px 4px;
+    border: 0.5px solid rgb(228, 215, 215);
+}
+
+.micro{
+    margin-left: 15px;
+}
+.right{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.right img{
+    margin-right: 5px;   
+}
+
+.user_logo{
+    border-radius: 50%;
+    
+}
+
+/*container*/
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(5, 253px); 
+}
+
+/*sidebar*/
+.sidebar{
+    padding-left: 10px ;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a{
+    text-decoration: none;
+    color: gray;
+}
+
+.inicio, 
+.personal{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);  
+    border-bottom: rgb(214, 195, 195) 1px solid; 
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+.inicio a,
+.personal a,
+.suscripcion a{
+    display: flex;
+    align-items: center;
+}
+.inicio img, 
+.personal img, 
+.suscripcion img{
+    padding: 2px;
+    margin:5px;
+    margin-right: 24px;
+    border-radius: 50%;
+}
+.suscripcion{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);  
+    border-bottom: rgb(214, 195, 195) 1px solid; 
+    padding-top: 10px;
+}
+
+.suscripcion h4{
+    height: 25px;
+}
+/*content*/
+
+.content{
+    display: grid;
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left:15px;
+}
+
+.wrap{
+    font-size: 15px;
+    width: 254px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);   
+    grid-gap: 5px;
+}
+
+.description{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.description p{
+    font-size: 14px;
+    color: #606060;   
+}
+.logo{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.logo{
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 25px;
+}
+
+.hero{
+    grid-column: span 3;
+    
+}
+.container-img{
+    grid-column:  span 3;
+    position: relative;
+    cursor: pointer;
+}
+/*----- Escueela de Nada------*/
+.edn-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.edn-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-img:hover > .edn-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container-img:hover > .edn-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- Call Of Duty------*/
+.cod-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.cod-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .cod-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .cod-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- Somos Geeks------*/
+.geek-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.geek-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .geek-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .geek-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- Visa------*/
+.visa-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.visa-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .visa-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .visa-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- Anime ------*/
+.ani-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.ani-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .ani-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .ani-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- Cyclo ------*/
+.cyclo-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.cyclo-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .cyclo-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .cyclo-img{
+    opacity: 0;
+    visibility: hidden;
+}
+/*----- nanutria ------*/
+.nutria-img{
+    position: absolute;
+    transition: all 500ms ease-out;
+}
+.nutria-movie{
+    position:absolute;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-img:hover > .nutria-movie{
+    opacity: 1;
+    visibility: visible;
+}
+.container:hover > .nutria-img{
+    opacity: 0;
+    visibility: hidden;
+}
+
