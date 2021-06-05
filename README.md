@@ -1,2 +1,2 @@
 # practive-video
-Es proyecto-copia de youtuve 
+Es proyecto-copia de youtube 
